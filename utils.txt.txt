@@ -1,1 +1,1 @@
-utility funtion for version 1
+utility funtion for version 2
