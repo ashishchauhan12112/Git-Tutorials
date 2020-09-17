@@ -1,0 +1,122 @@
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo
+$ git --version
+git version 2.28.0.windows.1
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo
+$ fit init
+bash: fit: command not found
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo
+$ git init
+Initialized empty Git repository in C:/Users/Ashish Chauhan/OneDrive/Desktop/Find Git Repo/.git/
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.txt.txt
+        utils.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git add .
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.txt.txt
+        new file:   utils.txt.txt
+
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git commit -m "version 1"
+[master (root-commit) 8b58fb0] version 1
+ 2 files changed, 2 insertions(+)
+ create mode 100644 index.txt.txt
+ create mode 100644 utils.txt.txt
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git log
+commit 8b58fb0d52b5a87e89bf19ed556323c012fd08d5 (HEAD -> master)
+Author: ashishchauhan12112 <61801838+ashishchauhan12112@users.noreply.github.com>
+Date:   Thu Sep 17 16:44:47 2020 +0530
+
+    version 1
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git config --global user.name "Chauhan ashish"
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git config --global user.email "ashishchauhan009117@gmail.com
+> "
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git config --global user.email "ashishchauhan009117@gmail.com"
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.txt.txt
+        modified:   utils.txt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git add .
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git commit --m "version 2"
+[master ea3df8d] version 2
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git log
+commit ea3df8d0ff56a75d4983cd229dc92dfde31e1fe6 (HEAD -> master)
+Author: Chauhan ashish <ashishchauhan009117@gmail.com>
+Date:   Thu Sep 17 16:49:52 2020 +0530
+
+    version 2
+
+commit 8b58fb0d52b5a87e89bf19ed556323c012fd08d5
+Author: ashishchauhan12112 <61801838+ashishchauhan12112@users.noreply.github.com>
+Date:   Thu Sep 17 16:44:47 2020 +0530
+
+    version 1
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ git log^C
+
+Ashish Chauhan@DESKTOP-9F8KVVR MINGW64 ~/OneDrive/Desktop/Find Git Repo (master)
+$ ^C
